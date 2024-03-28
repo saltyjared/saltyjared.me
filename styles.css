@@ -9,6 +9,7 @@ section {
     align-content: center;
     margin-left: 1em;
     min-height: 100vh;
+    font-size: x-large;
 }
 
 @keyframes slideFromLeft {
