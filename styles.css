@@ -66,18 +66,10 @@ h1:hover:after {
     height: 205px;
 }
 
-.projects#JujuType {
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 2rem;
-}
-
-.projects#JujuType:hover {
-    visibility: hidden;
-}
-
-.projects#JujuType:hover:after {
-    content: ;
+.projects {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
 .hidden {
