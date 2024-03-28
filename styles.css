@@ -11,6 +11,34 @@ section {
     min-height: 100vh;
 }
 
+@keyframes slideFromLeft {
+    0% {
+        filter: blur(5px);
+        transform: translateX(-100%);
+    }
+    100% {
+        filter: blur(0);
+        transform: translate(0);
+    }
+}
+
+#navbar {
+    animation: 0.5s ease-out 0s 1 slideFromLeft;
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 37.5%;
+}
+
+#navbar a {
+    display: inline-block;
+    list-style-type: none;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+
 h1 {
     font-size: 32px;
 }
@@ -21,14 +49,28 @@ h1:hover {
 
 h1:hover:after {
     content: attr(alt-greeting);
-    font-size: 32px;    
+    font-size: 32px;
+    line-height: 2.81em;
+}
+
+.profile-pic {
+    border-radius: 50%
+}
+
+.circle {
+    background: black;
+    border-radius: 50%;
+    width: 205px;
+    height: 205px;
 }
 
 .hidden {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 0.75s;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .show {

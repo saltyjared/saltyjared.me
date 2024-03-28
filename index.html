@@ -8,19 +8,30 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <section class="hidden">
-        <h1 alt-greeting="hello, I'm Jared Paul!">
+
+    <div id="navbar">
+        <a href="#home">home</a>
+        <a href="#projects">projects</a>
+        <a href="#trivia">trivia</a>
+        <a href="#contact-me">contact me</a>
+    </div>
+
+    <section class="hidden" id="home">
+        <h1 alt-greeting="hello, i'm Jared (Paul)!">
             hello, i'm Jared!
         </h1>
-            <p>i'm a first-year master's student enrolled in 
-               <a href="https://msse.berkeley.edu/">UC Berkeley's Master of Molecular Science and Software Engineering</a>
-               program, and currently based in Covina, CA. i am also a(n increasingly less) recent graduate from UCLA, earning my B.S. in Biochemistry in the spring of 2023. 
-               currently seeking intern and full-time positions in <strong>data analytics</strong>, 
-               <strong>data science</strong>, or <strong>software development</strong> opportunities this coming summer/fall 2024!
-            </p>
+
+        <div class="circle"><img class="profile-pic" src="images/LinkedIn Headshot.jpg"></div>
+            
+        <p>i'm a first-year master's student enrolled in 
+            <a href="https://msse.berkeley.edu/">UC Berkeley's Master of Molecular Science and Software Engineering</a>
+            program, currently based in Covina, CA. i am also a(n increasingly less) recent graduate from UCLA, earning my B.S. in Biochemistry in the spring of 2023. 
+            currently seeking intern and full-time positions in <strong>data analytics</strong>, 
+            <strong>data science</strong>, or <strong>software development</strong> opportunities this coming summer/fall 2024!
+        </p>
     </section>
 
-    <section class="hidden">
+    <section class="hidden" id="projects">
         <h2>projects</h2>
         <ul>
             <li><a href="https://saltyjared.github.io/JujuType/">JujuType</a>, a speed typing game inspired by Monkeytype and my favorite anime</li>
@@ -29,8 +40,8 @@
         </ul>
     </section>
 
-    <section class="hidden">
-        <h2>trivial things</h2>
+    <section class="hidden" id="trivia">
+        <h2>trivia</h2>
         <ul>
             <li>peaked #44,159 on <a href="https://osu.ppy.sh/users/8976461">osu!std</a></li>
             <li><a href="https://lolchess.gg/profile/na/PinkPantheress-Munch/set10">hardstuck plat III</a> in sets 9.5 and 10 of tft</li>
@@ -40,7 +51,7 @@
 
 </body>
 <footer>
-    <section class="hidden">
+    <section class="hidden" id="contact-me">
     <h2>contact me</h2>
         <ul>
             <li><a href="mailto:jaredpaulgue@gmail.com">email</a></li>

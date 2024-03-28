@@ -1,3 +1,4 @@
+// Add class 'show' when user screen intersects with content
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry);
@@ -5,5 +6,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
+// Select all elements with 'hidden' class
 const hiddenElements = document.querySelectorAll('.hidden');
+
+// Input each HTML element w/ class 'hidden' to observer
 hiddenElements.forEach((el) => observer.observe(el));
