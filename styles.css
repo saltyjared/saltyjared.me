@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin-left: 1em;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h1:hover {
+    font-size: 0;
+}
+
+h1:hover:after {
+    content: attr(alt-greeting);
+    font-size: 32px;    
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
