@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 61px;
+}
+
 body {
     background-color: white;
     font-family: sans-serif;
@@ -57,7 +61,7 @@ h1:hover:after {
 }
 
 .profile-pic {
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .circle {

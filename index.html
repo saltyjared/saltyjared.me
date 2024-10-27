@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>saltyjared.me</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/saltyjared-favicon.png">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -12,7 +13,6 @@
     <div id="navbar">
         <a href="#home">home</a>
         <a href="#projects">projects</a>
-        <a href="#trivia">trivia</a>
         <a href="#contact-me">contact me</a>
     </div>
 
@@ -23,58 +23,89 @@
 
         <div class="circle"><img class="profile-pic" src="images/LinkedIn Headshot.jpg"></div>
             
-        <p>i'm a second-year master's student enrolled in 
+        <p>
+            i'm an aspiring developer with interests in <strong>data science</strong> and <strong>web development</strong>.
+            i'm currently a second-year master's student enrolled in 
             <a href="https://msse.berkeley.edu/">UC Berkeley's Master of Molecular Science and Software Engineering</a>
-            program, currently based in Covina, CA. i am also a(n increasingly less) recent graduate from UCLA, earning my B.S. in Biochemistry in the spring of 2023. 
-            currently seeking intern and part-time positions in <strong>data analytics</strong>, 
-            <strong>data science</strong>, or <strong>software development</strong> in the coming seasons!
+            program, based in Covina, CA. 
+            i am also a(n increasingly less) recent graduate from UCLA, earning my B.S. in Biochemistry in the spring of 2023.
+            <br>
+            <br>
+            <em>
+                currently seeking <strong>data</strong> and <strong>software development</strong> internships,
+                particularly within <strong>healthcare</strong> or <strong>R&D</strong>!
+            </em>
         </p>
     </section>
 
     <section class="hidden" id="projects">
         <h2>projects</h2>
-            <a href="https://saltyjared.pythonanywhere.com/"><img class="projects" id="Spam-vs-Ham" src="images/Spam-vs-Ham preview.png"></a>
-            <p>
-                The <strong>Spam vs. Ham</strong> classifier is a logistic regression model, 
-                capable of discerning between spam emails and legitimate emails. It is accompanied by a simple web application, 
-                capable of taking user input to predict the legitimacy of an email. Built in <strong>Flask</strong>.
-            </p>
-            <br>
-            <a href="https://youtube.com/watch?v=zJm1dGayTyc"><img class="projects" id="Nat-Dis" src="images/NDC Thumbnail.jpg"></a>
-            <iframe src="https://drive.google.com/file/d/1CFU7tkH36OqAlgaFElP5tzo6sZSDu0_x/preview" width="640" height="480" allow="autoplay"></iframe>
-            <p><strong>Natural Disaster Classifier</strong> is a set of computer vision models, trained to classify and 
-                differentiate between natural disaster images and their apparent damage level. Developed as the final project
-                for UC Berkeley's Data 200S: Principles and Techniques of Data Science.
-            </p>
-            <br>
-            <a href="https://saltyjared.github.io/JujuType/"><img class="projects" id="JujuType" src="images/JujuType-light.png"></a>
-            <p><strong>JujuType</strong> is a speed typing game inspired by Monkeytype and my favorite anime, Jujutsu Kaisen. 
-                Built in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
-            </p>
-            <br>
-            <a href="https://github.com/saltyjared/Simple-Substructure-Search"><img class="projects" id="SSS" src="images/tnt.png"></a>
-            <p><strong>Simple Substructure Search</strong> is a <strong>Python</strong> module that processes molecular 
-                structural data files (<strong>.sdf</strong>), returns their graphical representations via NetworkX, and can 
-                detect the presence of substructures via molecular fingerprinting.
-            </p>
 
-    </section>
+        <a href="https://saltyjared.github.io/calculadora/">
+            <img class="projects" id="Calculadora" src="images/Calculadora_preview.png">
+        </a>
+        <p>
+            <strong>Calculadora</strong> is a browser-based calculator application, capable of basic mathematical
+            operations. Inspired by the iOS calculator app and developed as part of The Odin Project curriculum. 
+            Built in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+        </p>
+        <br>
 
-    <section class="hidden" id="trivia">
-        <h2>trivia</h2>
-        <ul>
-            <li>fav movie: <a href="https://en.wikipedia.org/wiki/Moneyball_(film)">Moneyball 💸⚾</a></li>
-            <li>fav album (right now): <a href="https://open.spotify.com/album/1KNUCVXgIxKUGiuEB8eG0i">Charm - Clairo</a></li>
-            <li>peaked #44,159 on <a href="https://osu.ppy.sh/users/8976461">osu!std</a></li>
-            <li><a href="https://lolchess.gg/profile/na/PinkPantheress-Munch/set10">hardstuck plat III</a> in sets 9.5 and 10 of TFT</li>
-            <li>chronic League of Legends/Valorant esports viewer</li>
-        </ul>
+        <a href="https://saltyjared.github.io/etch-a-sketch/">
+            <img class="projects" id="Etch-A-Sketch" src="images/Etch-A-Sketch_preview.png">
+        </a>
+        <p>
+            <strong>Etch-A-Sketch</strong> is a browser-based drawing application, allowing users to
+            the cursor to draw on an increasingly opaque canvas. Inspired by the classic toy 
+            and developed as part of The Odin Project curriculum.
+            Built in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
+        </p>
+        <br>
+        
+        <a href="https://saltyjared.pythonanywhere.com/">
+            <img class="projects" id="Spam-vs-Ham" src="images/Spam-vs-Ham preview.png">
+        </a>
+        <p>
+            The <strong>Spam vs. Ham</strong> classifier is a logistic regression model, 
+            capable of discerning between spam emails and legitimate emails. The accompanying web application
+            takes a user-inputted email to predict its legitimacy. Built in <strong>Python</strong> and <strong>Flask</strong>.
+        </p>
+        <br>
+        
+        <a href="https://youtube.com/watch?v=zJm1dGayTyc">
+            <img class="projects" id="Nat-Dis" src="images/NDC Thumbnail.jpg">
+        </a>
+        <iframe src="https://drive.google.com/file/d/1CFU7tkH36OqAlgaFElP5tzo6sZSDu0_x/preview" width="640" height="480" allow="autoplay"></iframe>
+        <p>
+            <strong>Natural Disaster Classifier</strong> is a set of computer vision models, trained to classify and 
+            differentiate between natural disaster images and their apparent damage level. Developed as the final project
+            for UC Berkeley's Data 200S: Principles and Techniques of Data Science.
+        </p>
+        <br>
+
+        <a href="https://saltyjared.github.io/JujuType/">
+            <img class="projects" id="JujuType" src="images/JujuType-dark.png">
+        </a>
+        <p>
+            <strong>JujuType</strong> is a speed typing game inspired by Monkeytype and my favorite anime, Jujutsu Kaisen. 
+            Built in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+        </p>
+        <br>
+
+        <a href="https://github.com/saltyjared/Simple-Substructure-Search">
+            <img class="projects" id="SSS" src="images/tnt.png">
+        </a>
+        <p>
+            <strong>Simple Substructure Search</strong> is a <strong>Python</strong> module that processes molecular 
+            structural data files (<strong>.sdf</strong>), returns their graphical representations via NetworkX, and can 
+            detect the presence of substructures via molecular fingerprinting.
+        </p>
     </section>
 
     <section class="hidden" id="contact-me">
         <h2>contact me</h2>
             <ul>
-                <li><a href="mailto:jaredpaulgue@gmail.com">email</a></li>
+                <li><a href="mailto:jaredpaulgue@berkeley.edu">email</a></li>
                 <li><a href="https://github.com/saltyjared">github</a></li>
                 <li><a href="https://www.linkedin.com/in/jguevara/">linkedin</a></li>
             </ul>
